@@ -1,0 +1,124 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+      margin: 0;
+      margin-bottom: 100px;
+      padding: 0;
+      background-color:whitesmoke;    
+  }
+  
+  /* Navigation Bar */
+  header{
+      position: sticky;
+      background-color: black;
+      top:0;
+      z-index: 1000;
+  }
+
+  .navbar a{
+      text-decoration: none;
+      color:white;
+  }
+  
+  .logo a:hover, ul li a:hover{
+    color: greenyellow;
+}
+  
+  
+  .navbar{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-right: 20px;
+      margin-left: 20px;
+  
+  
+  }
+  
+  .list_item li{
+      display: inline-block;
+      margin-right: 10px;
+  }
+  
+  div ul li a:link{
+      text-decoration: none;
+      color:white;
+  }
+  
+  
+  /* Table & Registration common styles*/
+  
+  .table_section , .registration-section{
+      margin-left: 25%;
+      background-color: white;
+      width:50%;
+      box-shadow: 0 0 10px rgb(112, 107, 107);
+  }
+  
+  .table_containr, .form-container{
+      margin-left:20px ;
+      padding-bottom: 10px;
+      
+  }
+  
+  .table-containr h1, .form-container h1{
+      margin-top:50px ;
+      padding-top: 20px;
+  }
+  
+  
+  /* Table esign*/
+  
+  #main-table{
+      width: 95%;
+  }
+  
+  table, td , th {
+      border:1px solid rgba(173, 174, 171, 0.927);
+     
+  }
+  
+  td , th{
+      padding:10px;
+  }
+  
+  table,th,tbody,td{
+      border-spacing: 0;
+      
+  } 
+  
+  .table_section{
+      background-color: white;
+      width: 50%;
+  }
+  
+  /* Form Design*/
+  
+  
+  form div input{
+      width: 95%;
+      padding: 7px;
+      border:1px solid rgb(227, 216, 216)
+      
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    border:2px solid skyblue;
+    
+  
+  }
+  
+  input[type="text"]:valid , input[type="email"]:valid{
+    background-color:  rgb(228, 240, 251);
+  }
+  
+  #register-btn{
+      background-color: lightskyblue;
+      color: white;
+      width: 98%;
+  }
+  
+  

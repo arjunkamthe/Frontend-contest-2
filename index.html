@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library System</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <header >
+      <nav class="navbar">
+        <div style="color:white;">
+          <h2> AK Library System</h2>
+        </div>
+
+        <div class="list">
+          <ul class="list_item">
+            <li><a href="#books">Books</a></li>
+            <li><a href="#register">Register</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main body -->
+    <main>
+      <!-- Book Table Start  -->
+
+      <section class="table_section" >
+
+       <div class="table_containr">
+         <h1 id="books" style="text-align:center">Books</h1>
+        <table id="main-table" >
+          <thead>
+            <th>Book ID</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Availability</th>
+          </thead>
+
+          <tbody>
+    <!-- Book Row 1 -->
+            <tr>
+              <td>1</td>
+              <td>
+                <table class="nested-table">
+                  <a href="#">Atomic Habits</a>
+                  <tr>
+                    <td>Publication Date:2018</td>
+                  </tr>
+                  <tr>
+                    <td>Page Count:320</td>
+                  </tr>
+                  <tr>
+                    <td>ISBN: 543-4567890456 </td>
+                  </tr>
+                </table>
+              </td>
+              <td>James clear</td>
+              <td>Self-Help</td>
+              <td>Available</td>
+            </tr>
+
+    <!-- Book Row 2 -->           
+            <tr>
+              <td>2</td>
+              <td>
+                <table class="nested-table">
+                 <a href="#">How to Win Friends and Influence People</a></p>
+                  <tr>
+                    <td>Publication Date:2002</td>
+                  </tr>
+                  <tr>
+                    <td>Page Count:280</td>
+                  </tr>
+                  <tr>
+                    <td>ISBN: 132-4567890123</td>
+                  </tr>
+                </table>
+              </td>
+
+              <td>Dale Carnegie</td>
+              <td>Self-Help</td>
+              <td>Available</td>
+            </tr>
+
+    <!-- Book Row 3 -->
+            <tr>
+              <td>3</td>
+              <td>
+                <table class="nested-table">
+                  <a href="#">The Power of Now</a>
+                  <tr>
+                    <td>Publication Date:2012</td>
+                  </tr>
+                  <tr>
+                    <td>Page Count:250</td>
+                  </tr>
+                  <tr>
+                    <td>ISBN: 453-6785696682</td>
+                  </tr>
+                </table>
+              </td>
+              <td>Eckhart Tolle</td>
+              <td>Spiritual self-help</td>
+              <td>Available</td>
+            </tr>
+
+    <!-- Book Row 4 -->
+            <tr>
+              <td>3</td>
+              <td>
+                <table class="nested-table">
+                  <a href="#">The 5 Love Languages</a>
+                  <tr>
+                    <td>Publication Date:2015</td>
+                  </tr>
+                  <tr>
+                    <td>Page Count:200</td>
+                  </tr>
+                  <tr>
+                    <td>ISBN: 213-5690677930</td>
+                  </tr>
+                </table>
+              </td>
+              <td>Gary Chapman</td>
+              <td>Self-help</td>
+              <td>Available</td>
+            </tr>
+
+    <!-- Book Row 5 -->
+            <tr>
+              <td>5</td>
+              <td>
+                <table class="nested-table">
+                  <a href="#">The Secret</a>
+                  <tr>
+                    <td>Publication Date:2000</td>
+                  </tr>
+                  <tr>
+                    <td>Page Count:250</td>
+                  </tr>
+                  <tr>
+                    <td>ISBN: 123-6790677103</td>
+                  </tr>
+                </table>
+              </td>
+              <td>Rhonda Byrne</td>
+              <td>Self-help</td>
+              <td>Available</td>
+            </tr>
+
+          </tbody>
+        </table>            <!-- Books Table ended -->
+
+       </div>
+      </section>
+
+<!-- Start of Registration form -->
+      <section class="registration-section">
+        <div class="form-container" >
+
+          <h1 id="register" style="text-align:center">Register</h1>
+          
+          <form method="post">
+        <!--First name  -->
+            <div>
+              <label for="fname">First Name:</label>
+              <br>
+              <input type="text" id="fname" name="fname" required />
+            </div>
+            <br>
+
+        <!--Last name  -->
+            <div>
+              <label for="lname">Last Name:</label>
+              <br>
+              <input type="text" id="lname" name="lname" required />
+            </div>
+            <br>
+
+        <!-- Date of birth -->
+            <div>
+              <label for="dob">Date Of Birth:</label>
+              <br>
+              <input type="date" id="dob" name="dob" required />
+            </div>
+            <br>
+
+        <!-- Age -->
+            <div>
+              <label for="age">Age:</label>
+              <br>
+              <input type="number" id="age" name="age" min="5" max="100" />
+            </div>
+            <br>
+
+        <!-- Email -->
+            <div>
+              <label for="email">Email:</label>
+              <br>
+              <input type="email" id="email" required />
+            </div>
+            <br>
+
+        <!-- password -->
+            <div>
+              <label for="password">Password:</label>
+              <br>
+              <input type="password" id="password" pattern=".{6,}" required />
+            </div>
+            <br>
+
+        <!-- Confirm password  -->
+            <div>
+              <label for="confirm-password">Confirm Password:</label>
+              <br>
+              <input
+                type="password"
+                id="confirm-password"
+                pattern=".{6,}"
+                required/>
+              </div>
+              <br>
+
+        <!-- Register button -->
+            <div>
+                <input id="register-btn" type="submit" value="Register" />
+            </div>
+            <br>
+
+            
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
